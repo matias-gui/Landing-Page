@@ -19,12 +19,14 @@
 }
 
 @keyframes img {
-    to {
+    0%{
         transform: scale(101%);
     }
-
-    from {
+    50% {
         transform: scale(99%);
+    }
+    100%{
+        transform: scale(101%);
     }
 
 }
@@ -141,18 +143,28 @@ section#sobre-mim {
 
 section#habilidades, #projetos{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+section h2{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+section p img{
+    width: 80px;
     margin: 15px;
+
+    animation-name: img;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
 }
 
-section#habilidades img:hover {
-    transform: scale(110%);
-    transition: 1s ease-out;
-    box-shadow: inset 0 0 10px rgba(87, 87, 210, 0.19);
-    cursor: pointer;
-
-}
 section article{
     display: flex;
     justify-content: center;
@@ -180,5 +192,77 @@ section article img{
     box-shadow: 5px 5px inset var(--bg);
     border-radius: 10px;
 
+}
+.aside{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    animation-name: img;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+aside p {
+    position: relative;
+    text-align: center;
+    font-size: 10px;
+    padding: 7px;
+    width: 100px;
+    border-radius: 5px;
+}
+aside a{
+    width: 100%;
+    color: #fff;
+}
+
+.icons{
+    position: absolute;
+    top: -35%;
+    left: -5%;
+    width: 23px;
+    margin: 10px;
+
+}
+footer .linha{
+    width: 100%;
+    margin-top: 5px ;
+    border-bottom: 1px solid #fff ;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+footer h3{
+    color: var(--primaria);
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 1px 1px 5px black;
+    margin: 10px;
+}
+footer .email{
+    background-color: rgba(139, 0, 0, 0.019);
+    width: 60px;
+    border-radius: 10px;
+    border: none;
+    padding: 2px;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+footer .whats{
+    background-color:rgba(0, 100, 0, 0);
+    width: 80px;
+    border-radius: 20px;
+    border: none;
+    padding: 2px;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
 }
 
