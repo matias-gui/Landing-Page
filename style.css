@@ -69,7 +69,7 @@ header {
 header nav {
     position: absolute;
     top: 1%;
-    left: 50%;
+    left: 45%;
 
 }
 
@@ -110,7 +110,7 @@ header img {
 header .titulo-texto {
     width: 50%;
     position: absolute;
-    top: 15%;
+    top: 16%;
     left: 45%;
     display: flex;
     flex-direction: column;
