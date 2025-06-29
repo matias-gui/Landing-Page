@@ -85,7 +85,7 @@ header nav a {
 
 }
 
-a:hover {
+header a:hover {
     opacity: 70%;
     text-decoration: underline;
     transition-delay: .2s;
@@ -139,7 +139,9 @@ main h2 {
 }
 
 section {
-    background-image: linear-gradient(to right, var(--primaria), #243e63);
+    background-color: #8890b05f;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.362);
+    border: none;
     color: #fff;
     width: 85%;
     padding: 20px;
@@ -147,9 +149,10 @@ section {
     border-radius: 10px;
 }
 
-section#sobre-mim {
+section#sobre-mim p {
     text-indent: 12px;
     font-size: medium;
+    font-size: 12px;
     text-align: justify;
 
 }
@@ -193,8 +196,8 @@ section article{
 }
 section .imagem-projetos{
     border-radius: 15px 0px;
-    margin-top: 5px;
-    width: 200px;
+    margin: 15px 0px ;
+    width: 250px;
     height: 150px;
     box-shadow: 2px 2px 5px #00000048;
     border: 1px solid #23222244;
@@ -204,10 +207,28 @@ section .imagem-projetos{
     animation-duration: 8s;
     animation-delay: 1s;
     animation-iteration-count: infinite;
+    transition: 2s ease-in-out;
+}
+article img:hover{
+    cursor: pointer;
+    margin: 15px;
+    transform: scale( 105%);
+    transition: 2s ease-in-out;
 }
 section a{
-    background-color: #00FFFF;
+    font-weight: bold;
+    background-color: #ddfffff6;
+    border-radius: 5px;
     padding: 5px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.744);
+    transition: 1s ease-in-out;
+}
+section article a:hover{
+    color: #ece6e6;
+    background-color: rgba(0, 0, 0, 0.221);
+    transition: 1s ease-in-out;
+
 }
 
 
@@ -274,6 +295,10 @@ footer .email, .whats{
     color: #fff;
     font-family: Georgia, 'Times New Roman', Times, serif;
     cursor: pointer;
+}
+footer .email:hover, .whats:hover{
+    opacity: 80%;
+    transition: 2s ease-in-out;
 }
 footer .direitos{
     color: #fff;
