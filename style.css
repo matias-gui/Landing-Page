@@ -62,27 +62,21 @@ html {
 
 header {
     display: flex;
-    width: 100%;
+    flex-direction: row;
+    justify-content: end;
+    width: 90%;
     height: 300px;
 }
 
-header nav {
-    position: absolute;
-    top: 1%;
-    left: 45%;
-
+header nav{
+    justify-content: center;
 }
 
 header nav a {
     color: var(--primaria);
     font-size: 12px;
     font-weight: bold;
-    border: none;
     padding: 5px;
-    margin: 4px;
-    border-radius: 7px;
-
-
 }
 
 header a:hover {
@@ -96,7 +90,7 @@ header .foto {
     width: 40%;
     position: absolute;
     top: 10%;
-    left: 20%;
+    left: 15%;
     z-index: 3;
     padding: 5px;
 }
@@ -111,7 +105,7 @@ header .titulo-texto {
     width: 50%;
     position: absolute;
     top: 16%;
-    left: 45%;
+    left: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
