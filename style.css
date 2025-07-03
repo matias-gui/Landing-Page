@@ -7,15 +7,17 @@
     --rosa: #FF69B4;
 }
 
-@keyframes background-titulos {
-    0% {
-        background-color: var(--primaria);
+@keyframes paragrafo-header {
+    0%{
+        color: #fff;
     }
-
-    100% {
-        background-color: var(--secundaria);
+    50%{
         color: var(--primaria);
     }
+    100%{
+        color: #fff;
+    }
+
 }
 
 @keyframes img {
@@ -113,6 +115,16 @@ header .titulo-texto {
     font-size: 12px;
     color: #fff;
     text-shadow: 0px 0px 2px var(--primaria);
+}
+.titulo-texto p {
+    margin-top: 10px;
+    animation:paragrafo-header 5s infinite 4s linear ;
+
+}
+.titulo-texto h2 {
+    margin-top: 10px;
+    animation:paragrafo-header 5s infinite 1s linear ;
+
 }
 
 main {
