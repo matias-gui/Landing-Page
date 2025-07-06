@@ -47,7 +47,6 @@
     }
 }
     
-
 * {
     padding: 0px;
     margin: 0px;
@@ -66,12 +65,13 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: end;
-    width: 90%;
+    width: 96%;
     height: 300px;
 }
 
 header nav{
     justify-content: center;
+    margin-top: 5px;
 }
 
 header nav a {
@@ -89,12 +89,11 @@ header a:hover {
 }
 
 header .foto {
+    display: flex;
     width: 40%;
     position: absolute;
     top: 10%;
     left: 15%;
-    z-index: 3;
-    padding: 5px;
 }
 
 header img {
@@ -236,7 +235,6 @@ section article a:hover{
     transition: 1s ease-in-out;
 
 }
-
 
 .aside{
     margin-top: 10px;

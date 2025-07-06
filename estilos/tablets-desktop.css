@@ -1,0 +1,224 @@
+@media (min-width:769px) and (max-width:992px) {
+    header{
+        width: 100%;
+    }
+    header nav {
+        position: absolute;
+        top: 36%;
+        left: 53%;
+    }
+    header nav a{
+        margin: 20px;
+        font-size: 14px;
+    }
+    header .foto{
+    justify-content: center;
+    max-width: 800px;
+   }
+   header img{
+    width: 120px;
+   }
+   header .titulo-texto{
+    left: 41%;
+    min-width: 400px;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 10px;
+   }
+   section{
+    max-width: 790px;
+   }
+    section#sobre-mim p { 
+    font-size: 16px;
+   }
+   section#habilidades p img{
+    width: 90px;
+   }
+   section h2{
+    font-size: 25px;
+   }
+   section#projetos p a{
+    font-size: 13px;
+    margin: 5px;
+   }
+   .aside p{
+        font-size: 14px;
+   }
+   .aside .icons {
+        top: -6px;
+        left: -16px;
+   }
+   #github{
+     top:-8px;
+     left:-8px ;
+     width: 25px;
+   }
+   footer h3{
+    font-size: 20px;
+   }
+   footer p a img{
+    width: 17px;
+   }
+   
+   footer .direitos{
+    font-size: 13px;
+    margin-bottom: 50px;
+   }
+   }
+   
+   @media (min-width:993px) and (max-width:1200px) {
+    header{
+        width: 100%;
+    }
+    header nav {
+        position: absolute;
+        top: 2%;
+        left: 64%;
+    }
+    header nav a{
+        margin: 15px;
+        font-size: 15px;
+    }
+    header .foto{
+    justify-content: center;
+    max-width: 800px;
+   }
+   header img{
+    width: 140px;
+   }
+   header .titulo-texto{
+    left: 37%;
+    min-width: 400px;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 10px;
+   }
+   section{
+    max-width: 1000px;
+   }
+    section#sobre-mim p { 
+    font-size: 17px;
+   }
+   section#habilidades p img{
+    width: 100px;
+   }
+   section h2{
+    font-size: 26px;
+   }
+   section#projetos p a{
+    font-size: 14px;
+    margin: 5px;
+   }
+   .aside p{
+        font-size: 15px;
+   }
+   .aside .icons {
+        top: -7px;
+        left: -19px;
+        width: 26px;
+   }
+   #github{
+     top:-8px;
+     left:-8px ;
+     width: 25px;
+   }
+   footer h3{
+    font-size: 20px;
+   }
+   footer p a img{
+    width: 17px;
+   }
+   
+   footer .direitos{
+    font-size: 13px;
+    margin-bottom: 50px;
+   }
+   }
+
+
+   
+   @media (min-width:1201px) {
+    header{
+      max-width: 1200px;
+    }
+    header nav {
+        position: absolute;
+        top: 40%;
+        left: 65%;
+    }
+    header nav a{
+        margin: 15px;
+        font-size: 15px;
+        background-color:rgba(169, 169, 169, 0.832);
+        border-radius: 4px;
+        color: rgba(0, 0, 0, 0.73);
+        box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.11);
+    }
+    nav a:hover{
+        color: rgba(255, 255, 255, 0.544);
+        opacity: none;
+        transition: 1s ease-in-out ;
+        background-color: rgba(0, 0, 0, 0.338);
+
+    }
+    header .foto{
+    justify-content: center;
+    max-width: 800px;
+   }
+   header img{
+    width: 160px;
+   }
+   header .titulo-texto{
+    top: 20%;
+    left: 32%;
+    min-width: 400px;
+    text-align: center;
+    font-size: 17px;
+    margin-left: 10px;
+   }
+   section{
+    max-width: 1100px;
+   }
+    section#sobre-mim p { 
+    font-size: 19px;
+   }
+   section#habilidades p img{
+    width: 110px;
+   }
+   section h2{
+    font-size: 28px;
+   }
+   section#projetos p a{
+    font-size: 15px;
+    margin: 5px;
+   }
+   .aside p{
+        font-size: 15px;
+   }
+   .aside .icons {
+        top: -7px;
+        left: -19px;
+        width: 26px;
+   }
+   #github{
+     top:-8px;
+     left:-8px ;
+     width: 25px;
+   }
+   footer h3{
+    font-size: 23px;
+   }
+   footer p a img{
+    width: 18px;
+   }
+   
+   footer .direitos{
+    font-size: 14px;
+    margin-bottom: 50px;
+   }
+   }
+
+
+
+
+
