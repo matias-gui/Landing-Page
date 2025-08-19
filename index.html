@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="estilos/style.css"> 
+    <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/tablets-desktop.css">
 </head>
 
@@ -47,25 +47,32 @@
         </section>
         <section id="projetos">
             <h2>Projetos</h2>
-            <article>
-               <img src="imagens/image-login.png"width="200px" alt=" imagem do projeto" class="imagem-projetos">
-               <p><a href="https://matias-gui.github.io/projeto-login/" target="_blank">Acessar Projeto</a> <a href="https://github.com/matias-gui/projeto-login/tree/main?tab=readme-ov-file" target="_blank"> Acessar GitHub</a></p>
+            <article class="container">
+                <div class="carrossel">
+                        <img src="imagens/image-login.png" width="200px" alt=" imagem do projeto"
+                            class="item-carrossel">
+                        <img src="imagens/image-site.png" width="200px" height="150px" alt="imagem do site"
+                            class="item-carrossel">
+                </div>
+               <div class="button">
+                    <button class="btn-prev" onclick="prev()">❮</button>
+                    <button class="btn-next" onclick="next()">❯</button>
+                </div>
             </article>
-            <article>
-               <img src="imagens/image-site.png" width="200px" height="150px" alt="imagem do site" class="imagem-projetos" >
-                <p><a href="https://matias-gui.github.io/site-android/" target="_blank">Acessar Projeto</a> <a href="https://github.com/matias-gui/site-android/tree/5c5235394260dfd2cb6bb85a31277f4fba8d2f35" target="_blank"> Acessar GitHub</a></p>
-            </article>
+             
         </section>
         <aside class="aside">
             <p>
-                 <a  href="http://linkedin.com/in/paulo-guilherme-905a5118a" target="_blank"><img class="icons"  src="imagens/icons8-linkedin-64.png" alt="Logo do Linkedin"> Linkedin</a></p>
-            <p>
-                <a   href="https://github.com/matias-gui" target="_blank"><img class="icons" id="github" src="imagens/icons8-github-96.png"
-                        alt="Logo do GitHub">GitHub</a>
+                <a href="http://linkedin.com/in/paulo-guilherme-905a5118a" target="_blank"><img class="icons"
+                        src="imagens/icons8-linkedin-64.png" alt="Logo do Linkedin"> Linkedin</a>
             </p>
-            <p> 
-                 <a  href="https://www.instagram.com/guimatiasc?igsh=NTZ3cm1wYnJmamh0&utm_source=qr"
-                    target="_blank"> <img class="icons" src="imagens/icons8-instagram-96.png" alt="Logo do Instagram"> Instagram  </a>
+            <p>
+                <a href="https://github.com/matias-gui" target="_blank"><img class="icons" id="github"
+                        src="imagens/icons8-github-96.png" alt="Logo do GitHub">GitHub</a>
+            </p>
+            <p>
+                <a href="https://www.instagram.com/guimatiasc?igsh=NTZ3cm1wYnJmamh0&utm_source=qr" target="_blank"> <img
+                        class="icons" src="imagens/icons8-instagram-96.png" alt="Logo do Instagram"> Instagram </a>
             </p>
 
         </aside>
@@ -74,11 +81,15 @@
         <p class="linha"></p>
         <h3>Entre em Contato</h3>
         <p>
-           <a href="mailto:guimatias890@gmail.com" target="_blank"> <button   class="email" style="--background: rgba(139, 0, 0, 0.304);"><img src="imagens/icone-email.png" width="15px" alt="imagem do email"></button> </a>
-           <a href="https://wa.me/48999584454?text=Olá"  target="_blank"><button class="whats" style='--background:rgba(0, 100, 0, 0.251);'><img src="imagens/icons8-whatsapp-100.png" width="15px" alt="imagem do whatsApp"> </button></a>
+            <a href="mailto:guimatias890@gmail.com" target="_blank"> <button class="email"
+                    style="--background: rgba(139, 0, 0, 0.304);"><img src="imagens/icone-email.png" width="15px"
+                        alt="imagem do email"></button> </a>
+            <a href="https://wa.me/48999584454?text=Olá" target="_blank"><button class="whats"
+                    style='--background:rgba(0, 100, 0, 0.251);'><img src="imagens/icons8-whatsapp-100.png" width="15px"
+                        alt="imagem do whatsApp"> </button></a>
         </p>
         <p class="direitos">
-            © 2025 Paulo Guilherme 
+            © 2025 Paulo Guilherme
         </p>
     </footer>
 
@@ -86,3 +97,4 @@
 </body>
 
 </html>
+
