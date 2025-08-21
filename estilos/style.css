@@ -250,7 +250,7 @@ section article img {
 .btn-prev{
     position: absolute;
     left: 10%;
-    transform: translateY(-530%);
+    transform: translateY(-200%);
     color: #fff;
     background-color: transparent;
     border: none;
@@ -260,7 +260,7 @@ section article img {
 .btn-next{
     position: absolute;
     right: 10%;
-    transform: translateY(-530%);
+    transform: translateY(-200%);
     color: #fff;
     background-color: transparent;
     border: none;
