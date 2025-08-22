@@ -24,3 +24,8 @@ const itens = document.querySelectorAll('.item-carrossel');
     }
 
     mostrarimg(img);
+
+    function link (){
+        
+
+    }

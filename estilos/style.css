@@ -230,52 +230,66 @@ section#projetos {
 }
 
 section article.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-    width: 230px;
-    max-width: 600px;
-    height: 120px;
-
+    width: 400px;
+    max-width: 510px;
+    height: 200px;
+    backdrop-filter: blur(5px);
+   
+    background: url('/imagens/img-fundo.jpg') no-repeat center center cover;
 }
+
+
 section article.carrossel{
     display: flex;
     transition: transform 0.5s ease-in-out; 
     transform: translateX(0); 
-}
-section article img {
-    object-fit: cover;
-    height: 120px;
-    width: 230px;
+
     
 }
-.btn-prev{
+section article img {
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.422);
+    object-fit: cover;
+    image-rendering: auto;
+    height: 150px;
+    width: 260px;
+   
+    
+}
+.button{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
     position: absolute;
-    left: 10%;
-    transform: translateY(-200%);
-    color: #fff;
+    width:350px;
+    max-width: 510px;
+
+
+}
+.btn-prev{
+   
+    color:#fff;
     background-color: transparent;
     border: none;
     padding: 10px;
     cursor: pointer;
 }
 .btn-next{
-    position: absolute;
-    right: 10%;
-    transform: translateY(-200%);
+    
     color: #fff;
     background-color: transparent;
     border: none;
+    border-radius: 50%;
     padding: 10px;
     cursor: pointer;
 }
 
-section a {
-    font-weight: bold;
-    background-color: #ddfffff6;
-    border-radius: 5px;
-    padding: 5px;
-    font-size: 13px;
-    color: rgba(0, 0, 0, 0.744);
-    transition: 1s ease-in-out;
+section article a {
+    display: none;
 }
 
 section article a:hover {
