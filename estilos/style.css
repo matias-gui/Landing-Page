@@ -111,7 +111,7 @@ header .foto {
 
 header img {
     border-radius: 20px 0px;
-    width: 130px;
+    width: 150px;
     filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.362) );
 }
 
@@ -237,18 +237,14 @@ section article.container {
     width: 400px;
     max-width: 510px;
     height: 200px;
-    backdrop-filter: blur(5px);
-   
-    background: url('/imagens/img-fundo.jpg') no-repeat center center cover;
+    
 }
 
 
 section article.carrossel{
     display: flex;
-    transition: transform 0.5s ease-in-out; 
+    transition: transform 5s ease-out;
     transform: translateX(0); 
-
-    
 }
 section article img {
     border-radius: 10px;
@@ -288,8 +284,20 @@ section article img {
     cursor: pointer;
 }
 
-section article a {
-    display: none;
+section .links a {
+   color: #171515;
+   background-color: darkgrey;
+   padding: 3px;
+   border-radius: 5px;
+   margin: 5px;
+   font-weight: bold;
+   box-shadow: 2px 2px 2px var(--secundaria);
+}
+section .links a:hover{
+    color: #ece6e6;
+    background-color: rgba(0, 0, 0, 0.221);
+    transition: 1s ease-in-out;
+    box-shadow: none;
 }
 
 section article a:hover {
