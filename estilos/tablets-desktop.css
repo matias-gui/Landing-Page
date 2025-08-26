@@ -234,34 +234,48 @@
     
 
     header img {
-        width: 200px;
+        width: 350px;
+      
+       
     }
     header nav a {
-    font-size: 16px;
+    font-size: 18px;
 }
     header .titulo-texto {
-        font-size: 18px;
+        font-size: 20px;
         margin-left: 10px;
     }
      header .titulo-texto p {
-        font-size: 16px;
+        font-size: 18px;
      }
-
+     section#sobre-mim{
+        max-width: 1500px;
+     }
     section#sobre-mim p {
-        font-size: 20px;
+        font-size: 22px;
     }
     
     section#habilidades p img{
         width: 130px;
         height: 130px;
     }
+    section#habilidades{
+        max-width: 1500px;
+        gap: 16%;
+    }
     section#habilidades p {
         width: 200px;
-        height: 230px;
+        height: 250px;
+        
+       
+       
     }
 
     section h2 {
-        font-size: 28px;
+        font-size: 30px;
+        margin-bottom: 7%;
+        justify-content: center;
+        align-items: flex-start;
     }
 
     section#projetos p a {
@@ -270,22 +284,22 @@
     }
     
     section article.container {
-        width: 600px;
-        height: 300px;
+        width: 700px;
+        height: 400px;
     }
 
     .carrossel {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 500px;
-        height: 250px;
+        width: 600px;
+        height: 350px;
 
     }
 
     section article img {
-        width: 360px;
-        height: 250px;
+        width: 460px;
+        height: 260px;
 
     }
 
@@ -294,46 +308,55 @@
         justify-content: space-between;
         align-items: center;
         position: absolute;
-        width: 510px;
-        max-width: 510px;
+        width: 610px;
+        max-width: 610px;
     }
 
     .btn-next,
     .btn-prev {
-        font-size: 25px;
+        font-size: 27px;
+    }
+    section .links{
+        text-align: center;
+        width: 460px;
+
     }
     section .links a {
-        font-size: 16px;
-       padding: 7px;
-       margin: 15px;
+        font-size: 18px;
+       padding: 9px;
+       margin: 18px;
     }
 
     .aside p {
-        font-size: 17px;
+        text-align: center;
+        font-size: 20px;
+        margin: 0px 50px;
     }
 
     .aside .icons {
         top: -7px;
-        left: -25px;
-        width: 27px;
+        left: -33px;
+        width: 30px;
     }
 
     #github {
         top: -8px;
-        left: -12px;
-        width: 27px;
+        left: -22px;
+        width: 30px;
     }
 
     footer h3 {
-        font-size: 20px;
+        font-size: 25px;
+        white-space: pre;
+        transition-timing-function: ease-in-out;
     }
 
     footer p a img {
-        width: 17px;
+        width: 25px;
     }
 
     footer .direitos {
-        font-size: 13px;
+        font-size: 14px;
         margin-bottom: 50px;
     }
 }

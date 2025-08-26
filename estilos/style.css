@@ -149,7 +149,6 @@ main {
 }
 
 main h2 {
-    text-align: center;
     font-style: italic;
     margin-bottom: 15px;
     font-weight: bolder;
@@ -250,6 +249,7 @@ section article img {
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.422);
     object-fit: cover;
+    background-size: cover;
     image-rendering: auto;
     height: 150px;
     width: 260px;
