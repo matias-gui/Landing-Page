@@ -75,4 +75,8 @@ const gitlink = document.getElementById('github');
     }
 
     digitar()
-
+        const navegacao = document.addEventListener('click', function(){
+            const nav = document.querySelector('.nav');
+            nav.classList.toggle('active');
+        });
+        
