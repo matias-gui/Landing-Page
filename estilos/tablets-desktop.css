@@ -12,10 +12,9 @@
         min-height: 100%;
     }
 
-    header nav a {
-        margin: 15px;
-        font-size: 14px;
-    }
+   header .nav ul li a{
+    font-size: 14px;
+}
 
     header img {
         width: 180px;
@@ -132,6 +131,22 @@
     header .navegacao{
         display: none;
     }
+    header .nav ul li a{
+        font-size: 16px;
+        gap: 45px;
+    }
+    header .nav {
+        position:fixed;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        z-index: 1000;
+        padding: 20px;
+        backdrop-filter: blur(80px);
+        border-bottom: 1px solid #ffffff1c;
+        background-color: rgba(240, 248, 255, 0.195);
+    }
+
     
     header .titulo-texto {
         font-size: 18px;
@@ -239,8 +254,6 @@
 
     header img {
         width: 350px;
-      
-       
     }
      header .navegacao{
         display: none;
@@ -251,7 +264,7 @@
         left: 0%;
         width: 100%;
         z-index: 1000;
-        padding: 20px;
+        padding: 10px;
         backdrop-filter: blur(80px);
         border-bottom: 1px solid #ffffff1c;
         background-color: rgba(240, 248, 255, 0.195);
@@ -274,16 +287,16 @@
     }
     
     section#habilidades p img{
-        width: 130px;
-        height: 130px;
+        width: 100px;
+        height: 100px;
     }
     section#habilidades{
         max-width: 1500px;
-        gap: 16%;
+        gap: 20%;
     }
     section#habilidades p {
-        width: 200px;
-        height: 250px;
+        width: 150px;
+        height: 150px;
         
        
        

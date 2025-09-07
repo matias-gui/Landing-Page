@@ -107,12 +107,12 @@ header .nav ul{
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 30px;
 }
 header .nav ul li a{
     color: #fff ;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 12px;
 }
 header a:hover {
     opacity: 70%;
