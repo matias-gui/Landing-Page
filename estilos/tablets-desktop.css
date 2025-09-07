@@ -20,7 +20,6 @@
     header img {
         width: 180px;
     }
-
     header .titulo-texto {
         left: 41%;
         min-width: 400px;
@@ -126,9 +125,14 @@
     header img {
         width: 200px;
     }
-    header nav a {
-    font-size: 16px;
-}
+    header .nav{
+        top: 1%;
+        left: 2%;
+    }
+    header .navegacao{
+        display: none;
+    }
+    
     header .titulo-texto {
         font-size: 18px;
         margin-left: 10px;
@@ -238,15 +242,21 @@
       
        
     }
-    .navegacao{
-       display: none;
+     header .navegacao{
+        display: none;
     }
     header .nav {
-        display: flex;
-
-        font-size: 18px;
+        position:fixed;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        z-index: 1000;
+        padding: 20px;
+        backdrop-filter: blur(80px);
+        border-bottom: 1px solid #ffffff1c;
+        background-color: rgba(240, 248, 255, 0.195);
     }
-    header nav a {
+    header .nav ul li  a{
     font-size: 18px;
 }
     header .titulo-texto {

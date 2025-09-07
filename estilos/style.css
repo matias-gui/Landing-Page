@@ -59,7 +59,6 @@
 * {
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -68,6 +67,8 @@ body,
 html {
     width: 100vw;
     height: 100vh;
+    box-sizing: border-box;
+    scrollbar-width: none;
     background-color: var(--bg);
 }
 
@@ -82,34 +83,34 @@ header {
 header .navegacao{
     display: flex;
     position: absolute;
-    top: 1%;
+    top: 2%;
     left: 3%;
     font-size: 30px;
-    color: #92b4b5;
+    color: #f9ffff;
     background-color: transparent;  
     border: none;
    
 }
-header .nav{
+header .nav {
     position: absolute;
-    top: 7%;
-    left: -200%;
+    top: -100%;
     font-size: 14px;
-    background-color: transparent;
-    border: none;
+    padding: 10px;
+    
 }
 header .nav.active{
-    left: 3%;
-    transition: .3s ease-in-out ;
+    top: 2%;
+    left: 10%;
+    transition: .5s ease-in-out ;
 }
 header .nav ul{
     list-style: none;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: row;
+    gap: 50px;
 }
 header .nav ul li a{
-    color: var(--primaria) ;
+    color: #fff ;
     font-weight: bold;
     font-size: 16px;
 }

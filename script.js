@@ -70,13 +70,15 @@ const gitlink = document.getElementById('github');
             i++;
             // Chama a função novamente após um atraso
             setTimeout(digitar, 200);
-
         }
     }
+        digitar()
+ 
 
-    digitar()
-        const navegacao = document.addEventListener('click', function(){
-            const nav = document.querySelector('.nav');
-            nav.classList.toggle('active');
-        });
-        
+         const nav = document.querySelector('.nav')
+         const navegacao = document.querySelector('.navegacao')
+        function clicmenu(){
+            nav.classList.toggle('active')
+        }
+
+
