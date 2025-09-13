@@ -13,22 +13,22 @@
     <header>
          <button class="navegacao" onclick="clicmenu()">  &#9776; </button>
         <nav class="nav" > 
-            <ul>
-                <li><a href="#sobre-mim">Sobre mim</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#projetos">Projetos</a></li>
+            <ul class="menu">
+                <li><a href="#sobre-mim" class="nav-link">Sobre mim</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
             </ul>
         </nav>
         <div class="foto">
-            <img src="imagens/imagem.jpg" alt="imagem minha" width="100px">
+            <img src="imagens/imagem.jpg" alt="imagem minha" width="100px" class="secao">
         </div>
-        <div class="titulo-texto">
+        <div class="secao" id="titulo-texto">
             <h2>Paulo Guilherme de Alencar Matias</h2>
             <p>Desenvolvedor Front-end</p>
         </div>
     </header>
     <main>
-        <section id="sobre-mim">
+        <section class="secao" id="sobre-mim" >
             <h2>Sobre mim</h2>
             <p>Sou um profissional curioso e sempre disposto a aprender. Tenho 22 anos e iniciei meus estudos na área de
                 tecnologia em 2023, quando decidi entender melhor como as coisas funcionam e como tudo começou.
@@ -38,7 +38,7 @@
                 que sigo estudando e construindo meu futuro na tecnologia. </p>
 
         </section>
-        <section id="habilidades">
+        <section class="secao" id="habilidades">
             <h2>Habilidades</h2>
             <p> <img src="imagens/HTML5_logo.png" width="110px" alt="Icone do html"></p>
             <p><img src="imagens/css.png" width="120px" alt="Icone Css"></p>
@@ -48,7 +48,7 @@
             <p><img src="imagens/react-logo.png" alt=" imagem do react " width="120px"></p>
 
         </section>
-        <section id="projetos">
+        <section class="secao" id="projetos">
             <h2>Projetos</h2>
             <article class="container">
                 <div class="carrossel">
@@ -86,7 +86,7 @@
 
         </aside>
     </main>
-    <footer>
+    <footer class="footer">
         <p class="linha"></p>
         <h3 id="mensagem"></h3>
         <p>
