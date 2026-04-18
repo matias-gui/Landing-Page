@@ -293,7 +293,7 @@
        
        
     }
-
+  
     section h2 {
         font-size: 30px;
         margin-bottom: 7%;
@@ -307,19 +307,21 @@
     }
     
     section article.container {
-        width: 700px;
+        width: 100vw;
         height: 400px;
+       
     }
 
     .carrossel {
+        
         display: flex;
         justify-content: center;
         align-items: center;
         width: 600px;
         height: 350px;
-
+        
     }
-
+  
     section article img {
         width: 460px;
         height: 260px;
@@ -337,7 +339,7 @@
 
     .btn-next,
     .btn-prev {
-        font-size: 27px;
+       font-size: 18px;
     }
     section .links{
         text-align: center;

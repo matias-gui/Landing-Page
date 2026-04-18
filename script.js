@@ -47,16 +47,17 @@ function atualizarLinks(imgn) {
         gitlink.href = 'https://github.com/matias-gui/site-android';
         gitlink.target = '_blank';
     } else if (imgn === 2) {
-        projetolink.href = 'https://matias-gui.github.io/projeto-cordel-moderno/';
+        projetolink.href = 'https://matias-gui.github.io/gerador-de-senhas/';
         projetolink.target = '_blank';
-        gitlink.href = 'https://github.com/matias-gui/projeto-cordel-moderno';
+        gitlink.href = 'https://matias-gui.github.io/gerador-de-senhas/';
         gitlink.target = '_blank';
     } else if (imgn === 3) {
-        projetolink.href = 'https://matias-gui.github.io/projeto-redes-sociais/';
+        projetolink.href = 'https://matias-gui.github.io/relogio-digital/';
         projetolink.target = '_blank';
-        gitlink.href = 'https://github.com/matias-gui/projeto-redes-sociais';
+        gitlink.href = ' https://github.com/matias-gui/relogio-digital';
         gitlink.target = '_blank';
     }
+   
 }
 
 const msg = "Entre em Contato";
