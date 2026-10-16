@@ -4,109 +4,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Paulo Guilherme Matias | Desenvolvedor Front-end</title>
+    <meta name="description" content="Portfólio de Paulo Guilherme Matias, desenvolvedor front-end em busca de vaga júnior ou estágio: projetos em HTML, CSS e JavaScript.">
+    <meta name="theme-color" content="#0C0F14">
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/tablets-desktop.css">
+    <script>document.documentElement.classList.add('js', 'anim-aguardando');</script>
 </head>
 
 <body>
-    <header>
-        <button class="navegacao" onclick="clicmenu()"> &#9776; </button>
-        <nav class="nav">
-            <ul class="menu">
-                <li><a href="#sobre-mim" class="nav-link">Sobre mim</a></li>
-                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
-                <li><a href="#projetos" class="nav-link">Projetos</a></li>
-            </ul>
-        </nav>
-        <div class="foto">
-            <img src="imagens/imagem.jpg" alt="imagem minha" width="100px" class="secao">
-        </div>
-        <div class="secao" id="titulo-texto">
-            <h2>Paulo Guilherme de Alencar Matias</h2>
-            <p>Desenvolvedor Front-end</p>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+    <div class="progresso" aria-hidden="true"></div>
+
+    <header class="topo">
+        <div class="topo__interno">
+            <a class="marca" href="#inicio" aria-label="Paulo Guilherme Matias, início">PGM</a>
+            <button type="button" class="menu-botao" aria-expanded="false" aria-controls="menu-principal"
+                aria-label="Abrir menu">&#9776;</button>
+            <nav id="menu-principal" class="menu" aria-label="Principal">
+                <ul>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#sobre-mim">Sobre</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <main>
-        <section class="secao" id="sobre-mim">
-            <h2>Sobre mim</h2>
-            <p>Sou desenvolvedor em formação, apaixonado por tecnologia e focado em transformar ideias em soluções
-                reais. Iniciei meus estudos em 2023 e, desde então, venho construindo projetos práticos com JavaScript,
-                HTML e CSS, aplicando na prática conceitos de lógica, consumo de APIs e criação de interfaces
-                responsivas.
 
-                Tenho interesse em desenvolvimento front-end e busco constantemente evoluir minhas habilidades, sempre
-                explorando novas ferramentas e boas práticas de mercado. Gosto de desafios e estou sempre em busca de
-                aprender algo novo e melhorar o que já sei.
-
-                Atualmente, procuro uma oportunidade como desenvolvedor júnior ou estágio, onde eu possa contribuir,
-                aprender com o time e crescer profissionalmente. </p>
-
+    <main id="conteudo">
+        <section class="hero" id="inicio" aria-labelledby="titulo-principal">
+            <div class="raios" aria-hidden="true"><canvas></canvas></div>
+            <div class="hero__conteudo">
+            <p class="hero__rotulo" data-anim>Olá, eu sou</p>
+            <h1 id="titulo-principal" data-anim>Paulo Guilherme Matias</h1>
+            <p class="hero__cargo" data-anim>Desenvolvedor Front-end</p>
+            <p class="hero__resumo" data-anim>Em busca da primeira oportunidade como desenvolvedor júnior ou estágio.</p>
+            <div class="acoes" data-anim>
+                <a class="botao botao--primario" href="#projetos">Ver projetos</a>
+                <a class="botao" href="#contato">Falar comigo</a>
+            </div>
+            </div>
+            <ul class="hero__redes" aria-label="Perfis" data-anim>
+                <li><a href="https://github.com/matias-gui" target="_blank" rel="noopener noreferrer">GitHub<span class="sr"> (nova aba)</span></a></li>
+                <li><a href="http://linkedin.com/in/paulo-guilherme-905a5118a" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr"> (nova aba)</span></a></li>
+            </ul>
+            <span class="hero__rolar" aria-hidden="true" data-anim>Rolar</span>
         </section>
-        <section class="secao" id="habilidades">
-            <h2>Habilidades</h2>
-            <p> <img src="imagens/HTML5_logo.png" width="110px" alt="Icone do html"></p>
-            <p><img src="imagens/css.png" width="120px" alt="Icone Css"></p>
-            <p><img src="imagens/js.png" width="110px" alt="Icone JavaScript"></p>
-            <p><img src="imagens/gitt.png" alt="imagem da logo git" width="120px"></p>
-            <p><img src="imagens/github_PNG20.png" alt="imagem do github" width="120px"></p>
-            <p><img src="imagens/react-logo.png" alt=" imagem do react " width="120px"></p>
 
-        </section>
-        <section class="secao" id="projetos">
-            <h2>Projetos</h2>
-            <article class="container">
-                <div class="carrossel">
-                    <img src="imagens/image-login.png" width="200px" alt=" imagem do projeto" class="item-carrossel">
-                    <img src="imagens/image.png" width="200px" height="150px" alt="imagem do site"
-                        class="item-carrossel">
-                    <img src="/imagens/Captura de tela 2026-04-17 212100.png" width="200px" height="150px" alt="imagem do site"
-                        class="item-carrossel">
-                    <img src="/imagens/Captura de tela 2026-04-17 211506.png" width="200px" height="150px" alt="imagem do site"
-                        class="item-carrossel">
-                </div>
-                <div class="button">
-                    <button class="btn-prev" onclick="prev()">❮</button>
-                    <button class="btn-next" onclick="next()">❯</button>
-                </div>
-            </article>
-            <div class="links">
-                <a href="" id="projeto">Acessar Projeto</a>
-                <a href="" id="github">Acessar GitHub</a>
+        <section id="projetos" class="secao revelar" aria-labelledby="t-projetos">
+            <div class="container">
+                <header class="secao__cabecalho">
+                    <h2 id="t-projetos">Projetos</h2>
+                    <p class="secao__intro">Projetos práticos desenvolvidos com HTML, CSS e JavaScript.</p>
+                </header>
+
+                <!-- TODO: adicionar a descrição e as tecnologias reais de cada projeto (<p class="projeto__desc">) -->
+                <article class="projeto">
+                    <a class="projeto__imagem" href="https://matias-gui.github.io/projeto-login/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                        <img src="imagens/image-login.png" alt="" width="1280" height="720" loading="lazy">
+                    </a>
+                    <div class="projeto__info">
+                        <h3>Projeto de login</h3>
+                        <p class="projeto__endereco">matias-gui.github.io/projeto-login</p>
+                        <div class="acoes">
+                            <a class="botao botao--primario" href="https://matias-gui.github.io/projeto-login/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo do projeto de login (nova aba)">Ver demo</a>
+                            <a class="botao" href="https://github.com/matias-gui/projeto-login" target="_blank" rel="noopener noreferrer" aria-label="Ver código do projeto de login no GitHub (nova aba)">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projeto">
+                    <a class="projeto__imagem" href="https://matias-gui.github.io/site-android/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                        <img src="imagens/image.png" alt="" width="1280" height="720" loading="lazy">
+                    </a>
+                    <div class="projeto__info">
+                        <h3>Site Android</h3>
+                        <p class="projeto__endereco">matias-gui.github.io/site-android</p>
+                        <div class="acoes">
+                            <a class="botao botao--primario" href="https://matias-gui.github.io/site-android/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo do site Android (nova aba)">Ver demo</a>
+                            <a class="botao" href="https://github.com/matias-gui/site-android" target="_blank" rel="noopener noreferrer" aria-label="Ver código do site Android no GitHub (nova aba)">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projeto">
+                    <a class="projeto__imagem" href="https://matias-gui.github.io/gerador-de-senhas/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                        <img src="imagens/Captura de tela 2026-04-17 212100.png" alt="" width="1280" height="720" loading="lazy">
+                    </a>
+                    <div class="projeto__info">
+                        <h3>Gerador de senhas</h3>
+                        <p class="projeto__endereco">matias-gui.github.io/gerador-de-senhas</p>
+                        <div class="acoes">
+                            <a class="botao botao--primario" href="https://matias-gui.github.io/gerador-de-senhas/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo do gerador de senhas (nova aba)">Ver demo</a>
+                            <a class="botao" href="https://github.com/matias-gui/gerador-de-senhas" target="_blank" rel="noopener noreferrer" aria-label="Ver código do gerador de senhas no GitHub (nova aba)">Código</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="projeto">
+                    <a class="projeto__imagem" href="https://matias-gui.github.io/relogio-digital/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+                        <img src="imagens/Captura de tela 2026-04-17 211506.png" alt="" width="1280" height="720" loading="lazy">
+                    </a>
+                    <div class="projeto__info">
+                        <h3>Relógio digital</h3>
+                        <p class="projeto__endereco">matias-gui.github.io/relogio-digital</p>
+                        <div class="acoes">
+                            <a class="botao botao--primario" href="https://matias-gui.github.io/relogio-digital/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo do relógio digital (nova aba)">Ver demo</a>
+                            <a class="botao" href="https://github.com/matias-gui/relogio-digital" target="_blank" rel="noopener noreferrer" aria-label="Ver código do relógio digital no GitHub (nova aba)">Código</a>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
-        <aside class="aside">
-            <p>
-                <a href="http://linkedin.com/in/paulo-guilherme-905a5118a" target="_blank"><img class="icons"
-                        src="imagens/icons8-linkedin-64.png" alt="Logo do Linkedin"> Linkedin</a>
-            </p>
-            <p>
-                <a href="https://github.com/matias-gui" target="_blank"><img class="icons" id="github"
-                        src="imagens/icons8-github-96.png" alt="Logo do GitHub">GitHub</a>
-            </p>
-            <p>
-                <a href="https://www.instagram.com/guimatiasc?igsh=NTZ3cm1wYnJmamh0&utm_source=qr" target="_blank"> <img
-                        class="icons" src="imagens/icons8-instagram-96.png" alt="Logo do Instagram"> Instagram </a>
-            </p>
 
-        </aside>
+        <section id="sobre-mim" class="secao revelar" aria-labelledby="t-sobre">
+            <div class="container">
+                <header class="secao__cabecalho">
+                    <h2 id="t-sobre">Sobre mim</h2>
+                </header>
+                <div class="sobre">
+                    <img class="sobre__foto" src="imagens/imagem.jpg" alt="Foto de Paulo Guilherme" width="320" height="320" loading="lazy">
+                    <div class="texto-leitura">
+                        <p>Sou desenvolvedor em formação, apaixonado por tecnologia e focado em transformar ideias em soluções reais. Iniciei meus estudos em 2023 e, desde então, venho construindo projetos práticos com JavaScript, HTML e CSS, aplicando na prática conceitos de lógica, consumo de APIs e criação de interfaces responsivas.</p>
+                        <p>Tenho interesse em desenvolvimento front-end e busco constantemente evoluir minhas habilidades, sempre explorando novas ferramentas e boas práticas de mercado. Gosto de desafios e estou sempre em busca de aprender algo novo e melhorar o que já sei.</p>
+                        <p>Atualmente, procuro uma oportunidade como desenvolvedor júnior ou estágio, onde eu possa contribuir, aprender com o time e crescer profissionalmente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="secao revelar" aria-labelledby="t-hab">
+            <div class="container">
+                <header class="secao__cabecalho">
+                    <p class="rotulo">03</p>
+                    <h2 id="t-hab">Habilidades</h2>
+                </header>
+                <ul class="habilidades">
+                    <li style="--marca: #E34F26"><span class="icone"><img src="imagens/HTML5_logo.png" alt="" width="64" height="64"></span><span class="habilidade__nome">HTML</span></li>
+                    <li style="--marca: #1572B6"><span class="icone"><img src="imagens/css.png" alt="" width="64" height="64"></span><span class="habilidade__nome">CSS</span></li>
+                    <li style="--marca: #F7DF1E"><span class="icone"><img src="imagens/js.png" alt="" width="64" height="64"></span><span class="habilidade__nome">JavaScript</span></li>
+                    <li style="--marca: #F05032"><span class="icone"><img src="imagens/gitt.png" alt="" width="64" height="64"></span><span class="habilidade__nome">Git</span></li>
+                    <li style="--marca: #F2F4F7"><span class="icone"><img src="imagens/github_PNG20.png" alt="" width="64" height="64"></span><span class="habilidade__nome">GitHub</span></li>
+                    <li style="--marca: #61DAFB"><span class="icone"><img src="imagens/react-logo.png" alt="" width="64" height="64"></span><span class="habilidade__nome">React</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contato" class="secao revelar" aria-labelledby="t-contato">
+            <div class="container">
+                <header class="secao__cabecalho">
+                    <h2 id="t-contato">Contato</h2>
+                </header>
+                <div class="contato">
+                    <div class="texto-leitura">
+                        <p>Estou buscando minha primeira oportunidade como desenvolvedor júnior ou estágio. Se meu trabalho te interessou, vamos conversar.</p>
+                        <dl class="contato__lista">
+                            <div><dt>E-mail</dt><dd><a href="mailto:guimatias890@gmail.com">guimatias890@gmail.com</a></dd></div>
+                            <div><dt>LinkedIn</dt><dd><a href="http://linkedin.com/in/paulo-guilherme-905a5118a" target="_blank" rel="noopener noreferrer">paulo-guilherme-905a5118a<span class="sr"> (nova aba)</span></a></dd></div>
+                            <div><dt>GitHub</dt><dd><a href="https://github.com/matias-gui" target="_blank" rel="noopener noreferrer">matias-gui<span class="sr"> (nova aba)</span></a></dd></div>
+                            <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/guimatiasc" target="_blank" rel="noopener noreferrer">@guimatiasc<span class="sr"> (nova aba)</span></a></dd></div>
+                        </dl>
+                    </div>
+                    <div class="contato__cartao">
+                        <h3>Vamos conversar</h3>
+                        <p>Escolha o canal que preferir.</p>
+                        <div class="acoes">
+                            <a class="botao botao--primario" href="mailto:guimatias890@gmail.com">Enviar e-mail</a>
+                            <a class="botao" href="https://wa.me/48999584454?text=Ol%C3%A1" target="_blank" rel="noopener noreferrer" aria-label="Conversar no WhatsApp (nova aba)">WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="footer">
-        <p class="linha"></p>
-        <h3 id="mensagem"></h3>
-        <p>
-            <a href="mailto:guimatias890@gmail.com" target="_blank"> <button class="email"
-                    style="--background: rgba(139, 0, 0, 0.304);"><img src="imagens/icone-email.png" width="15px"
-                        alt="imagem do email"></button> </a>
-            <a href="https://wa.me/48999584454?text=Olá" target="_blank"><button class="whats"
-                    style='--background:rgba(0, 100, 0, 0.251);'><img src="imagens/icons8-whatsapp-100.png" width="15px"
-                        alt="imagem do whatsApp"> </button></a>
-        </p>
-        <p class="direitos">
-            © 2025 Paulo Guilherme
-        </p>
+
+    <footer class="rodape">
+        <p>© 2026 Paulo Guilherme Matias · Feito com HTML, CSS e JavaScript puros</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="raios.js" defer></script>
+    <script src="animacoes.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
-<script src="script.js" defer></script>
