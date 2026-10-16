@@ -1,109 +1,53 @@
+// Menu mobile: abre/fecha e informa o estado ao leitor de tela
+const botao = document.querySelector('.menu-botao');
+const menu = document.getElementById('menu-principal');
 
-const itens = document.querySelectorAll('.item-carrossel');
-const projetolink = document.getElementById('projeto');
-const gitlink = document.getElementById('github');
+function alternarMenu(abrir) {
+    menu.classList.toggle('aberto', abrir);
+    botao.setAttribute('aria-expanded', String(abrir));
+    botao.setAttribute('aria-label', abrir ? 'Fechar menu' : 'Abrir menu');
+}
 
-let img = 0;
+botao.addEventListener('click', () => {
+    alternarMenu(botao.getAttribute('aria-expanded') !== 'true');
+});
+menu.addEventListener('click', (e) => {
+    if (e.target.closest('a')) alternarMenu(false);
+});
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && menu.classList.contains('aberto')) {
+        alternarMenu(false);
+        botao.focus();
+    }
+});
 
-// Função para mostrar a imagem com base no índice
-function mostrarimg(index) {
-    itens.forEach((item, i) => {
-        item.style.display = i === index ? 'block' : 'none';
+if ('IntersectionObserver' in window) {
+    // Destaca no menu a seção que está na tela
+    const links = [...menu.querySelectorAll('a')];
+    const secoes = new IntersectionObserver((entradas) => {
+        entradas.forEach((entrada) => {
+            if (!entrada.isIntersecting) return;
+            links.forEach((a) => {
+                if (a.hash === '#' + entrada.target.id) a.setAttribute('aria-current', 'true');
+                else a.removeAttribute('aria-current');
+            });
+        });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    links.forEach((a) => {
+        const alvo = document.querySelector(a.hash);
+        if (alvo) secoes.observe(alvo);
     });
+
+    // Aparição suave das seções: acontece uma vez e nunca esconde de novo
+    const revelar = new IntersectionObserver((entradas, obs) => {
+        entradas.forEach((entrada) => {
+            if (entrada.isIntersecting) {
+                entrada.target.classList.add('visivel');
+                obs.unobserve(entrada.target);
+            }
+        });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.revelar').forEach((el) => revelar.observe(el));
+} else {
+    document.querySelectorAll('.revelar').forEach((el) => el.classList.add('visivel'));
 }
-
-// Função para ir para a próxima imagem, vai somar o índice atual mais 1, % itens.length garante que o índice fique dentro dos limites, se passar do último item, volta para o primeiro
-function next() {
-    img = (img + 1) % itens.length;
-    mostrarimg(img);
-    atualizarLinks(img);
-
-}
-
-// Função para ir para a imagem anterior, vai subtrair o índice atual menos 1
-function prev() {
-    img = (img - 1 + itens.length) % itens.length;
-    mostrarimg(img);
-    atualizarLinks(img);
-}
-// Mostrar a primeira imagem inicialmente
-mostrarimg(img);
-
-projetolink.href = 'https://matias-gui.github.io/projeto-login/';
-projetolink.target = '_blank';
-gitlink.href = 'https://github.com/matias-gui/projeto-login';
-gitlink.target = '_blank';
-
-function atualizarLinks(imgn) {
-
-    if (imgn === 0) {
-        projetolink.href = 'https://matias-gui.github.io/projeto-login';
-        projetolink.target = '_blank';
-        gitlink.href = 'https://github.com/matias-gui/projeto-login';
-        gitlink
-    } else if (imgn === 1) {
-        projetolink.href = 'https://matias-gui.github.io/site-android/';
-        projetolink.target = '_blank';
-        gitlink.href = 'https://github.com/matias-gui/site-android';
-        gitlink.target = '_blank';
-    } else if (imgn === 2) {
-        projetolink.href = 'https://matias-gui.github.io/gerador-de-senhas/';
-        projetolink.target = '_blank';
-        gitlink.href = 'https://matias-gui.github.io/gerador-de-senhas/';
-        gitlink.target = '_blank';
-    } else if (imgn === 3) {
-        projetolink.href = 'https://matias-gui.github.io/relogio-digital/';
-        projetolink.target = '_blank';
-        gitlink.href = ' https://github.com/matias-gui/relogio-digital';
-        gitlink.target = '_blank';
-    }
-   
-}
-
-const msg = "Entre em Contato";
-const digitarmsg = document.getElementById('mensagem');
-let i = 0;
-
-function digitar() {
-    // Verifica se ainda há caracteres para digitar
-    if (i < msg.length) {
-        // Adiciona o próximo caractere à mensagem
-        digitarmsg.textContent += msg.charAt(i);
-        i++;
-        // Chama a função novamente após um atraso
-        setTimeout(digitar, 200);
-    }else{
-        setTimeout(()=>{
-            digitarmsg.textContent = '';
-            i = 0
-            digitar()
-        },5000)
-        
-    }
-}
-digitar()
-
-
-
-const observer = new IntersectionObserver(index => {
-    index.forEach(visivel => {
-        if (visivel.isIntersecting) {
-            visivel.target.style.opacity = 1;
-        } else {
-            visivel.target.style.opacity = 0;
-        }
-    })
-})
-const elemento = document.querySelectorAll('.secao')
-elemento.forEach(el => {
-    observer.observe(el)
-})
-
-
-const nav = document.querySelector('.nav')
-const navegacao = document.querySelector('.navegacao')
-function clicmenu() {
-    nav.classList.toggle('active')
-}
-
-
